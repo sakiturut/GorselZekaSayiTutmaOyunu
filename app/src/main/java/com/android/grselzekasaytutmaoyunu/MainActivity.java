@@ -24,26 +24,19 @@ public class MainActivity extends AppCompatActivity {
         textTime = (TextView)findViewById(R.id.textView2);
 
         buton=findViewById(R.id.button);
-/*
-        buton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //myCountDownTimer = new MyCountDownTimer(10000, 1000);
-               // myCountDownTimer.start();
-            }
-        });
 
-*/
 
-        new CountDownTimer(3000, 1000) {
-
+        new CountDownTimer(5000, 1000) {
+            int time;
             public void onTick(long millisUntilFinished) {
-                int time = (int) (millisUntilFinished / 1000);
+                time = (int) (millisUntilFinished / 1000);
                 textTime.setText(String.valueOf(time));
 
             }
 
             public void onFinish() {
+                time -=1;
+                textTime.setText(String.valueOf(time));
                 Intent sayiGosterIntent = new Intent(getApplicationContext(),SayiGosterActivity.class);
                 startActivity(sayiGosterIntent);
 
