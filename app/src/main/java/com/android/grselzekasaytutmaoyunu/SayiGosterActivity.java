@@ -35,6 +35,9 @@ public class SayiGosterActivity extends AppCompatActivity {
         b8=findViewById(R.id.button_eight);
         b9=findViewById(R.id.button_nine);
 
+        editText_number.setFocusable(false);
+        editText_number.setFocusableInTouchMode(true);
+
 
         new CountDownTimer(5000, 1000) {
             int time;
@@ -56,6 +59,7 @@ public class SayiGosterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 editText_number.append("1");
+
             }
         });
 
