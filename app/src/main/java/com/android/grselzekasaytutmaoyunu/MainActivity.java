@@ -20,13 +20,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textNumber = (TextView)findViewById(R.id.textView);
-        textTime = (TextView)findViewById(R.id.textView2);
-
-        buton=findViewById(R.id.button);
+        textNumber = (TextView)findViewById(R.id.textView_number);
+        textTime = (TextView)findViewById(R.id.textView_timer);
 
 
-        new CountDownTimer(5000, 1000) {
+
+
+        new CountDownTimer(1000, 1000) {
             int time;
             public void onTick(long millisUntilFinished) {
                 time = (int) (millisUntilFinished / 1000);
@@ -38,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 time -=1;
                 textTime.setText(String.valueOf(time));
                 Intent sayiGosterIntent = new Intent(getApplicationContext(),SayiGosterActivity.class);
+                //Intent sayiGosterIntent = new Intent(getApplicationContext(),RelativeLayoutTest.class);
                 startActivity(sayiGosterIntent);
 
 

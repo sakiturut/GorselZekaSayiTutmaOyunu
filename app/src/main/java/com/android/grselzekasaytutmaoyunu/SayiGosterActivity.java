@@ -19,8 +19,8 @@ public class SayiGosterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sayi_goster);
 
-        textView = findViewById(R.id.textView2);
-        buton=findViewById(R.id.button);
+        textView = findViewById(R.id.textView_timer);
+
 
         new CountDownTimer(5000, 1000) {
             int time;
@@ -37,13 +37,13 @@ public class SayiGosterActivity extends AppCompatActivity {
             }
         }.start();
 
-        buton.setOnClickListener(new View.OnClickListener() {
+       /* buton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
                 toastMessage("+10");
             }
-        });
+        });*/
 
     }
 
