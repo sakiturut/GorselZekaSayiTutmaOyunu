@@ -24,6 +24,8 @@ public class SayiGosterActivity extends AppCompatActivity {
         textView_timer = findViewById(R.id.textView_timer);
 
         editText_number=findViewById(R.id.editText);
+        editText_number.setFocusable(false);
+        editText_number.setFocusableInTouchMode(true);
 
         b1=findViewById(R.id.button_one);
         b2=findViewById(R.id.button_two);
@@ -35,8 +37,8 @@ public class SayiGosterActivity extends AppCompatActivity {
         b8=findViewById(R.id.button_eight);
         b9=findViewById(R.id.button_nine);
         b_Tamam=findViewById(R.id.b_Tamam);
-        editText_number.setFocusable(false);
-        editText_number.setFocusableInTouchMode(true);
+
+
 
 
         new CountDownTimer(5000, 1000) {
@@ -50,7 +52,7 @@ public class SayiGosterActivity extends AppCompatActivity {
                 time -=1 ;
                 textView_timer.setText(String.valueOf(time));
                 toastMessage("-10");
-               // finish();
+                finish();
             }
         }.start();
 

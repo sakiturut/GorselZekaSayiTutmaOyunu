@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        new CountDownTimer(1000, 1000) {
+        new CountDownTimer(5000, 1000) {
             int time;
             public void onTick(long millisUntilFinished) {
                 time = (int) (millisUntilFinished / 1000);
@@ -35,8 +35,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
             public void onFinish() {
-                time -=1;
-                textTime.setText(String.valueOf(time));
+
+                textTime.setText(String.valueOf(0));
                 Intent sayiGosterIntent = new Intent(getApplicationContext(),SayiGosterActivity.class);
                 //Intent sayiGosterIntent = new Intent(getApplicationContext(),RelativeLayoutTest.class);
                 startActivity(sayiGosterIntent);
