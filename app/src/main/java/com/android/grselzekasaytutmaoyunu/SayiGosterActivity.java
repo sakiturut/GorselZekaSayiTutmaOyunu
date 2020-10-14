@@ -16,16 +16,17 @@ public class SayiGosterActivity extends AppCompatActivity {
     TextView textView_timer;
     Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b_Tamam;
     EditText editText_number;
+    TextView textView_number;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sayi_goster);
 
         textView_timer = findViewById(R.id.textView_timer);
-
-        editText_number=findViewById(R.id.editText);
-        editText_number.setFocusable(false);
-        editText_number.setFocusableInTouchMode(true);
+        textView_number=findViewById(R.id.editText_number);
+        //editText_number=findViewById(R.id.editText_number);
+        //editText_number.setFocusable(false);
+        //editText_number.setFocusableInTouchMode(true);
 
         b1=findViewById(R.id.button_one);
         b2=findViewById(R.id.button_two);
@@ -36,23 +37,23 @@ public class SayiGosterActivity extends AppCompatActivity {
         b7=findViewById(R.id.button_seven);
         b8=findViewById(R.id.button_eight);
         b9=findViewById(R.id.button_nine);
-        b_Tamam=findViewById(R.id.b_Tamam);
+        b_Tamam=findViewById(R.id.button_tamam);
 
 
 
 
-        new CountDownTimer(5000, 1000) {
+        new CountDownTimer(10000, 1000) {
             int time;
             public void onTick(long millisUntilFinished) {
                 time = (int) (millisUntilFinished / 1000);
-                textView_timer.setText(String.valueOf(time-1));
+                textView_timer.setText(String.valueOf(time));
             }
 
             public void onFinish() {
                 time -=1 ;
                 textView_timer.setText(String.valueOf(time));
                 toastMessage("-10");
-                finish();
+                //finish();
             }
         }.start();
 
@@ -60,7 +61,7 @@ public class SayiGosterActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText_number.append("1");
+                textView_number.append("1");
 
             }
         });
@@ -70,7 +71,7 @@ public class SayiGosterActivity extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText_number.append("2");
+                textView_number.append("2");
             }
         });
 
@@ -78,7 +79,7 @@ public class SayiGosterActivity extends AppCompatActivity {
         b3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText_number.append("3");
+                textView_number.append("3");
             }
         });
 
@@ -86,7 +87,7 @@ public class SayiGosterActivity extends AppCompatActivity {
         b4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText_number.append("4");
+                textView_number.append("4");
             }
         });
 
@@ -95,7 +96,7 @@ public class SayiGosterActivity extends AppCompatActivity {
         b5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText_number.append("5");
+                textView_number.append("5");
             }
         });
 
@@ -104,7 +105,7 @@ public class SayiGosterActivity extends AppCompatActivity {
         b6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText_number.append("6");
+                textView_number.append("6");
             }
         });
 
@@ -113,7 +114,7 @@ public class SayiGosterActivity extends AppCompatActivity {
         b7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText_number.append("7");
+                textView_number.append("7");
             }
         });
 
@@ -122,7 +123,7 @@ public class SayiGosterActivity extends AppCompatActivity {
         b8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText_number.append("8");
+                textView_number.append("8");
             }
         });
 
@@ -131,7 +132,7 @@ public class SayiGosterActivity extends AppCompatActivity {
         b9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                editText_number.append("9");
+                textView_number.append("9");
             }
         });
 
