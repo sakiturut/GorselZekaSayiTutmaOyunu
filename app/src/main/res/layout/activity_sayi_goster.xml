@@ -21,7 +21,7 @@
         android:layout_width="400dp"
         android:layout_height="90dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="150dp"
         android:hint="sayi giriniz.."
         android:gravity="center"
         android:textSize="40dp"
@@ -146,6 +146,16 @@
         android:layout_toEndOf="@+id/button_eight"
         />
 
+
+        <Button
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:id="@+id/b_Tamam"
+            android:text="Tamam"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000000" />
 
 
 

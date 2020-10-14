@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 public class SayiGosterActivity extends AppCompatActivity {
     TextView textView_timer;
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b_Tamam;
     EditText editText_number;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,7 @@ public class SayiGosterActivity extends AppCompatActivity {
         b7=findViewById(R.id.button_seven);
         b8=findViewById(R.id.button_eight);
         b9=findViewById(R.id.button_nine);
-
+        b_Tamam=findViewById(R.id.b_Tamam);
         editText_number.setFocusable(false);
         editText_number.setFocusableInTouchMode(true);
 
@@ -134,13 +134,13 @@ public class SayiGosterActivity extends AppCompatActivity {
         });
 
 
-       /* buton.setOnClickListener(new View.OnClickListener() {
+        b_Tamam.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 finish();
                 toastMessage("+10");
             }
-        });*/
+        });
 
     }
 
