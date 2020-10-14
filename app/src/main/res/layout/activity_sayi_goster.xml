@@ -46,19 +46,6 @@
             android:autoSizeMinTextSize="60dp"
             android:gravity="center"/>
 
-<!--
-        <TextView
-            android:id="@+id/editText_number"
-            android:layout_width="match_parent"
-            android:layout_height="0dip"
-            android:layout_weight="1"
-            android:background="#00FF00"
-            android:gravity="center"
-            android:hint="kaydet"
-            android:textStyle="bold"
-            android:autoSizeTextType="uniform"
-
-           /> -->
 
         <TextView
             android:id="@+id/editText_number"
