@@ -42,8 +42,8 @@
             android:textStyle="bold"
             android:background="#FF0000"
             android:autoSizeTextType="uniform"
-            android:autoSizeMaxTextSize="70dp"
-            android:autoSizeMinTextSize="60dp"
+            android:autoSizeMaxTextSize="40dp"
+            android:autoSizeMinTextSize="30dp"
             android:gravity="center"/>
 
 
@@ -85,7 +85,9 @@
                 android:layout_weight="1"
                 android:text="1"
                 android:background="#FF0000"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textStyle="bold"
+                />
             <Button
                 android:id="@+id/button_two"
                 android:layout_weight="1"
@@ -93,7 +95,9 @@
                 android:layout_height="match_parent"
                 android:text="2"
                 android:background="#FF0000"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textStyle="bold"
+                />
             <Button
                 android:id="@+id/button_three"
                 android:layout_weight="1"
@@ -101,7 +105,9 @@
                 android:layout_height="match_parent"
                 android:text="3"
                 android:background="#FF0000"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textStyle="bold"
+                />
             </LinearLayout>
 
 
@@ -119,7 +125,9 @@
                 android:layout_weight="1"
                 android:text="4"
                 android:background="#FF0000"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textStyle="bold"
+                />
             <Button
                 android:id="@+id/button_five"
                 android:layout_weight="1"
@@ -127,7 +135,9 @@
                 android:layout_height="match_parent"
                 android:text="5"
                 android:background="#FF0000"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textStyle="bold"
+                />
             <Button
                 android:id="@+id/button_six"
                 android:layout_weight="1"
@@ -135,7 +145,9 @@
                 android:layout_height="match_parent"
                 android:text="6"
                 android:background="#FF0000"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textStyle="bold"
+                />
         </LinearLayout>
 
 
@@ -153,7 +165,9 @@
                 android:layout_weight="1"
                 android:text="7"
                 android:background="#FF0000"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textStyle="bold"
+                />
             <Button
                 android:id="@+id/button_eight"
                 android:layout_weight="1"
@@ -161,7 +175,9 @@
                 android:layout_height="match_parent"
                 android:text="8"
                 android:background="#FF0000"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textStyle="bold"
+                />
             <Button
                 android:id="@+id/button_nine"
                 android:layout_weight="1"
@@ -169,7 +185,9 @@
                 android:layout_height="match_parent"
                 android:text="9"
                 android:background="#FF0000"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:textStyle="bold"
+                />
         </LinearLayout>
 
 
@@ -180,7 +198,9 @@
             android:layout_weight="1"
             android:text="TAMAM"
             android:background="#FF0000"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:textStyle="bold"
+            />
 
 
 
